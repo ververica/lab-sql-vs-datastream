@@ -7,6 +7,17 @@
 # BlueJ files
 *.ctxt
 
+# Debugger
+.attach_*
+
+# Gradle build process files
+**/.gradle/**/*
+**/build/**/*
+**/.gradletasknamecache
+
+# IntelliJ
+.idea
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
