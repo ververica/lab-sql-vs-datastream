@@ -131,7 +131,7 @@ public class LateralTableJoin {
   }
 
   private static String loadQuery(String queryFile) throws IOException {
-    ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+    ClassLoader classLoader = LateralTableJoin.class.getClassLoader();
     try (InputStream is = classLoader.getResourceAsStream(queryFile)) {
       if (is == null) {
         throw new FileNotFoundException("File 'query.sql' not found");
